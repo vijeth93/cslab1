@@ -1,0 +1,26 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="bill2.css">
+<title>Bill Generator</title>
+</head>
+<body>
+<center><h1><u>Bill Generator</u></h1></center>
+<table align="center" border="2">
+<pre>
+
+<tr>
+<th></th>
+<th>Item</th>
+<th>Cost</th>
+<th>Qty</th>
+<th>Amount</th>
+</tr>
+
+<tr>
+<td><input type="checkbox" id="pench" value="Pen" onchange="toggle(this.id,this.value);"/></td>
+<td>pen</td>
+<td>Rs.10/-</td>
+<td><input type="number" id="pen-qty" min="0" disabled onchange="amt_update(this.id);"/></td>
+<td><input type="text" id="pen-amt" disabled/></td>
+</tr>
+<tr>
